@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* COLORES  dentro del proyecto***/
+    --primary: #0ba0db;
+    --secondary: white;
+    --secondary-light:rgb(173, 173, 173);
+    --dark1:#222222;
+    --dark2:#050505;
+}
+
+/* para poner los elementos a la esquina derecha */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* para quitarle los puntos de lista y ponerlos en linea no en columna inicio, portafolio y 
+sobre mi con el list-style none;*/
+.navbar ul {
+    display: flex;
+    list-style: none;
+
+
+}
+
+/* esto es para que se separen las letras entre ellas
+y el text decoration sirve para quitarle el efecto de subrayado
+y el margin es para que se separen entre inicio portafolio y sobre mi*/
+.navbar a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.hero{
+    background-color: var(--dark2);
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 530%;
+    opacity: 0.35;
+}
+
+
+
+/* PERFIL DEL CIRULO*/
+
+.perfil div{
+    position: absolute;
+}
+
+
+/* Para que todos los elementos se pongan en el centro de la pagina*/
+.perfil{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.cuadro{
+    width: 320px;
+    height: 450px;
+    background-color:var(--dark1);
+    opacity: 0.7;
+    z-index: 10;
+    top: 70px;
+}
+
+
+.circulo_trans{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px var(--primary);
+    opacity: .2;
+    z-index: 19;
+    top: 90px;
+    
+}
+
+.circulo{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 15px var(--primary);
+    z-index: 21;
+    top: 120px;
+    
+}
+
+/* para que la imagen mia se ponga arriba con todos los circulos*/
+
+.perfil-fotoperfil{
+    top: 134px;
+    z-index: 20;
+}
+
+
+/* estas son las medidas del la imagen*/
+.perfil-fotoperfil img{
+    width: 200px;
+    height: 202px;
+    border-radius: 50%;
+    border-radius: 50%;
+    opacity: 2;
+    z-index: 19;
+    top: 90px;
+
+}
+
+
+/* esto es para ponerle mi nombre y desarrollador web en el centro de la pagina*/
+
+.cuadro-texto{
+    font-size: 2rem;
+    color: var(--secondary);
+    top: 380px;
+    z-index: 11;
+}
+
+.cuadro-texto2{
+    font-size: 1.2rem;
+    color: var(--secondary);
+    top: 418px;
+    z-index: 11;
+}
+
+.cuadro-texto3{
+    font-size: 1.3rem;
+    color: var(--secondary);
+    top: 490px;
+    z-index: 11;
+
+}
+
+.cuadro-texto3 a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+
+/* esto es para que salgan los iconos*/
+
+.socialButton {
+
+    top: 450px;
+    z-index: 11;
+    /* text-decoration: none; es para que no salgan los iconos con subrayado*/
+    text-decoration: none;
+    
+
+
+}
+
+.socialButton a{
+width: 40px;
+margin: 0 10px;
+
+
+}
+
+
+
